@@ -48,10 +48,10 @@
 
 	<script id="articleTable" type="text/html">
 		<table>
-			<tr><th class="fancy">&#8470;</th><th class="date">Date</th><th class="">Article</th><th>Tags</th></tr>
+			<tr><th class="fancy">&#8470;</th><th class="">Airline</th><!--<th>Tags</th>--><th class="numbags"># Bags</th><th class="size-in">Size (in)</th><th class="size-cm">Size (cm)</th><th class="weightlb">Weight (lb)</th><th class="weightkg">Weight (kg)</th><th class="date">Last Updated</th></tr>
 		  {{#rows}}
-		  	<tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="date">{{date}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
-		  	<td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td></tr>
+		  	<tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
+		  	<!--<td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td>--><td class="numbags">{{numbags}}</td><td class="size-in">{{sizeinches}}</td><td class="weightlb">{{weightlb}}</td><td class="weightkg">{{weightkg}}</td><td class="size-cm">{{sizecm}}</td><td class="date">{{date}}</td></tr>
 		  {{/rows}}
 	  </table>
 	</script>
