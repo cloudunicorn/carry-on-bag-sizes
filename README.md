@@ -1,4 +1,4 @@
-# Hi!
+# Hi there!
 
 ![screenshot](https://raw.github.com/jlord/sheetsee-pocket/gh-pages/ss-pocket-ss.png)
 
