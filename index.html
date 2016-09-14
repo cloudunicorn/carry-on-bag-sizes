@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Pocket Reads</title>
+		<title>Airline Carry-on Bag Rules, brought to you by Minaal</title>
     <meta charset="UTF-8">
 		<script type="text/javascript" src="js/ICanHaz.js"></script> 
 		<script type="text/javascript" src='js/jquery.js '></script>
@@ -8,7 +8,7 @@
     <script type="text/javascript" src='js/site.js'></script>
 		<script type="text/javascript" src='js/sheetsee.js'></script>
     
-		<link rel="shortcut icon" href="https://raw.github.com/jlord/sheetsee-pocket/master/favicon-p.png"/>
+		<link rel="shortcut icon" href="./faviconminaal.ico"/>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link media="screen" rel="stylesheet" type="text/css" href="css/style.css"> 
 	</head>
@@ -16,10 +16,10 @@
 	<div id="wrapper">
 		<div id="title"></div>
 		<ul class="nav">
-			<li>ARTICLES READ AND ARCHIVED</li>
-			<li>POWERED BY <a href="http://jlord.gitub.io/sheetsee.js" target="_blank">SHEETSEE.JS</a> AND <a href="http://www.ifttt.com" target="blank">IFTTT.COM</a> (AND <a href="http://www.getpocket.com/" target="_blank">POCKET</a>)</li>
-      <li><a class="dim" href="#info" target="_blank">INFO</a><span class="dim"> or</span></li>
-			<li><a class="dim" href="http://www.github.com/jlord/sheetsee-pocket#hi" target="_blank">SET UP YOUR ARCHIVE</a></li>
+			<li>Carry-on bag size information brought to you by the nomadic team at <a href="https://www.minaal.com" target="_blank">Minaal</a>. Check out our <a href="https://www.minaal.com/products/carry-on-2-0-bag?utm_source=carryonsizes&utm_medium=link&utm_campaign=carryonbagsizes
+" target="_blank">Carry-on 2.0</a> & <a href="https://www.minaal.com/products/daily-bag?utm_source=carryonsizes&utm_medium=link&utm_campaign=carryonbagsizes
+" target="_blank">Daily Bag</a> for a travel speed boost.</li>
+      <li><span class="dim">If you see something out of date, let us know <a href="https://twitter.com/minaal" class = "dim" target="_blank">on Twitter</a>.</span></li>
 		</ul>
 
 		<div id="filters" class="container">
@@ -31,13 +31,12 @@
 		<div id="articleTable"></div>
 
     <div id="info">
-      <h2>INFO</h2>
-      <p>This is an open source, easy to replicate project by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a>. If you use <a href="http://www.getpocket.com" target="_blank">Pocket</a> to save articles for later, you can also use <a href="http://www.ifttt.com" target="_blank">ifttt.com</a> (if this than that) to automate sending the article details to a Google Spreadsheet once you've archived it. Once you have a Google Spreadsheet you can use <a href="http://jlord.github.io/sheetsee.js" target="_blank">sheetsee.js</a> to turn into a website like so. So many possibilities! See the <a href="http://www.github.com/jlord/sheetsee-pocket#hi" target="_blank">documentation</a> to learn how to set up your own or contribute code!</p>
+      <p class="credits">This site benefits from the generous open source work of <a href="http://www.twitter.com/jllord" class = "dim" target="_blank">@jllord</a>'s <a href="http://jlord.github.io/sheetsee.js" class = "dim" target="_blank">sheetsee.js</a>. </p>
     </div>
 	</div><!-- end wrapper -->
 
 	<script id="title" type="text/html">
-		<h1><span class="highlighted">{{numArticles}}</span> Airline Carry-on Rules</h1>
+		<h1><span class="highlighted">{{numArticles}}</span> Airline Carry-on Bag Sizes</h1>
 	</script>
 
   <script id="tags" type="text/html">
@@ -48,17 +47,17 @@
 
 	<script id="articleTable" type="text/html">
 		<table>
-			<tr><th class="fancy">&#8470;</th><th class="">Airline</th><!--<th>Tags</th>--><th class="numbags"># Bags</th><th class="size-in">Size (in)</th><th class="size-cm">Size (cm)</th><th class="weightlb">Weight (lb)</th><th class="weightkg">Weight (kg)</th><th class="date">Last Updated</th></tr>
+			<tr><th class="fancy">&#8470;</th><th class="">Airline</th><!--<th>Tags</th>--><th class="personalitem">Personal Item</th><th class="personalsize">Personal Size</th><th class="carryonbags">Carry-on Bags</th><th class="size-in">Size (in)</th><th class="size-cm">Size (cm)</th><th class="weightlb">Weight (lb)</th><th class="weightkg">Weight (kg)</th><th class="date">Last Updated</th></tr>
 		  {{#rows}}
 		  	<tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
-		  	<!--<td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td>--><td class="numbags">{{numbags}}</td><td class="size-in">{{sizeinches}}</td><td class="weightlb">{{weightlb}}</td><td class="weightkg">{{weightkg}}</td><td class="size-cm">{{sizecm}}</td><td class="date">{{date}}</td></tr>
+		  	<!--<td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td>--><td class="personalitem">{{personalitem}}</td><td class="personalsize">{{personalsize}}</td><td class="carryonbags">{{carryonbags}}</td><td class="size-in">{{sizeinches}}</td><td class="weightlb">{{weightlb}}</td><td class="weightkg">{{weightkg}}</td><td class="size-cm">{{sizecm}}</td><td class="date">{{date}}</td></tr>
 		  {{/rows}}
 	  </table>
 	</script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var URL = "1tiMY5HxDOadNdp1ui-CUMyTyjCruk5RLSJwarbhkFJI"
+      var URL = "1HwMy3GJTvAPea3M9Lsv7N_a62WvNUTjaoAp4-y0Lws8"
       Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
     }) 
       
