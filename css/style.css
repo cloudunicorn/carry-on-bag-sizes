@@ -42,4 +42,10 @@ input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background
 #info {padding: 30px 0px;}
 
 .social-shares{float:right;}
+.insta-embed{
+	float: right;
+	width: 220px;
+	margin-right: 120px;
+	margin-top: -160px;
+}
 
