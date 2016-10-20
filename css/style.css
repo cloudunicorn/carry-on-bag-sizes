@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 body {font-family: Montserrat; font-size: 13px; padding: 10px 0px 40px 0px; color: #333;}
 
 h1 {font-size: 48px; margin-bottom: 20px;}
@@ -40,6 +43,23 @@ tr:nth-child(2n+2) {background: #eee;}
 
 input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background-color: transparent; padding: 0px; color: #acacac; font-size: 24px; height: 32px; font-family: Montserrat, sans-serif;}
 
+::-webkit-input-placeholder {
+   color: #d21313;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #d21313;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #d21313;  
+}
+
+:-ms-input-placeholder {  
+   color: #d21313;  
+}
+
+
 .sml-button {border-radius: 1px; cursor: pointer; margin-left: 4px; padding: 4px 6px; background-color: #169bbf; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #fff; font-family: Montserrat;}
 .sml-button:hover {background: #eee;}
 .button-pressed {background: #0CCC96;}
@@ -58,9 +78,15 @@ input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background
 	margin-top:16px;
 }
 
+.date{
+	opacity:.5;
+}
+
 @media (max-width: 760px) {
 	h1 {font-size:28px;}
-	h3 {font-size:20px;}
+	h3 {font-size:18px;}
+	
+	input{font-size:18px; line-height:22px;}
 	
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
