@@ -60,6 +60,7 @@ input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background
 
 @media (max-width: 760px) {
 	h1 {font-size:28px;}
+	h3 {font-size:20px;}
 	
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
@@ -103,12 +104,12 @@ input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background
 	td:nth-of-type(2):before { content: "Airline"; }
 	/* td:nth-of-type(3):before { content: "Personal Items"; }
 	td:nth-of-type(4):before { content: "Personal Size"; } */
-	td:nth-of-type(3):before { content: "Carry-on Bags"; }
+	/* td:nth-of-type(3):before { content: "Carry-on Bags"; } */
+	td:nth-of-type(3):before { content: "Size (cm)"; }
 	td:nth-of-type(4):before { content: "Size (in)"; }
-	td:nth-of-type(5):before { content: "Size (cm)"; }
-	td:nth-of-type(6):before { content: "Linear"; }
+	td:nth-of-type(5):before { content: "Linear"; }
+	td:nth-of-type(6):before { content: "Weight (kg)"; }
 	td:nth-of-type(7):before { content: "Weight (lb)"; }
-	td:nth-of-type(8):before { content: "Weight (kg)"; }
-	td:nth-of-type(9):before { content: "Date Updated"; }
+	td:nth-of-type(8):before { content: "Date Updated"; }
 }
 }
