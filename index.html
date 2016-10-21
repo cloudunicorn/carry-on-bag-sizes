@@ -79,7 +79,8 @@
 
 		<!-- Search --> 
 		<div id="filters" class="container">
-			<input id="articleSearch" type="search" placeholder="Search for airline..."></input>
+			
+			<input id="articleSearch" type="text" placeholder="Search for airline..."></input>
 			<span class="clear sml-button">Clear</span> 
       	  	
 			<h4>FILTER RESULTS: <span id="tags"></span>  </h4> 
@@ -110,27 +111,18 @@
 		<table itemscope itemtype="http://schema.org/ItemList">
 			<thead>
 				<tr>
-				<!-- <th class="fancy">&#8470;</th> -->
-				<th class="airline"><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;Airline</th>
-				<!-- <th class="personalitem">Personal Item</th>
-				<th class="personalsize">Personal Size</th> 
-				<th class="carryonbags"># of Bags</th>-->
-				<th class="size-cm">Size (cm)</th>
-				<th class="size-in">Size (in)</th>
+				<th class="airline"><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;</th>
+				<th class="size-cm"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;CM</th>
+				<th class="size-in"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;INCHES</th>
 				<th class="linear">Linear</th>
-				<th class="weightkg">Weight (kg)</th>
-				<th class="weightlb">Weight (lb)</th>
+				<th class="weightkg"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;KG</th>
+				<th class="weightlb"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;LBS</th>
 				<th class="date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Updated</th>
 			</tr>
 			</thead>
 		  {{#rows}}
-		  	<tbody>
-		  		<tr class="{{rowNumber}}"> 
-				<!-- <td class="light-type">{{rowNumber}}</td> -->
+		  		<tr class="{{rowNumber}}">
 				<td class="airline"><a href="{{url}}" target="_blank">{{airline}}</a></td>
-				<!-- <td class="personalitem">{{personalitem}}</td>
-				<td class="personalsize">{{personalsize}}</td> 
-				<td class="carryonbags">{{carryonbags}}</td>-->
 				<td class="size-cm">{{sizecm}}</td>	
 				<td class="size-in">{{sizeinches}}</td>
 				<td class="linear">{{linear}}</td>							
@@ -138,7 +130,6 @@
 				<td class="weightlb">{{weightlb}}</td>
 				<td class="date">{{date}}</td>
 				</tr>
-			</tbody>
 		  {{/rows}}
 	  </table>
 	</script>

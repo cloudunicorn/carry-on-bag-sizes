@@ -14,7 +14,13 @@ p a {color: #169bbf;}
 p.dim {font-size: 10px; text-transform: uppercase; }
 .credits{color:#e2e2e2;}
 
-.light-type {color: #777;} /* #06DDA0 */
+.container2{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.light-type {color: #777;} 
 .dim {color: #acacac;}
 .fancy {font-family: baskerville, garamond, serif; font-weight: lighter; font-style: italic;}
 
@@ -31,11 +37,12 @@ ul.nav li.lede {font-size:1.3em;}
 #filters {padding: 30px 0px; overflow: auto;}
 #tags {line-height: 25px;}
 
-table {border-spacing: 0px; /* min-width: 900px; margin: 0 auto; */ }
-th {padding: 10px}
+table {border-spacing: 0px; }
+th {padding: 10px; color:#d21313;font-size:1.3em;text-transform:uppercase;}
 td, text {padding: 5px 10px; font-size: 14px; font-weight: lighter; line-height: 18px;}
-td.article a:visited {color: #777;}
+td.airport a:visited {color: #777;}
 td.date {min-width: 119px;}
+td.linear{min-width:100px;}
 tr {text-align: left; vertical-align: top; padding: 4px 0px;}
 tr:nth-child(2n+2) {background: #eee;}
 .tHeader {cursor: pointer;}
