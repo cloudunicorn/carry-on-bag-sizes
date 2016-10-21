@@ -29,6 +29,26 @@
 		<meta name="twitter:title" content="Carry-on Bag Sizes for all Airlines, brought to you by Minaal">
 		<meta name="twitter:description" content="Carry-on bag sizes for airlines worldwide. Mobile-friendly and with super-fast search.">
 		
+		<script src="https://use.fontawesome.com/900cb816ac.js"></script>
+		
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1650367365218700', {
+		em: 'insert_email_variable,'
+		});
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1650367365218700&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- DO NOT MODIFY -->
+		<!-- End Facebook Pixel Code -->
+		
 		<script type='application/ld+json'> 
 		{
 		  "@context": "http://www.schema.org",
@@ -54,19 +74,20 @@
 			
 		<p class="hello">Brought to you by <a href="https://www.minaal.com" target="_blank">Minaal</a>. 
 				Check out our <a href="https://www.minaal.com/products/carry-on-2-0-bag?utm_source=carryonsizes&utm_medium=link&utm_campaign=carryonbagsizes
-" target="_blank" alt="Minaal Carry-on 2.0 Bag">Carry-on bag</a>.
+" target="_blank" title="Minaal Carry-on 2.0 Bag">Carry-on bag</a>.
 		</p>
 
 		<!-- Search --> 
 		<div id="filters" class="container">
-			<input id="articleSearch" type="text" placeholder="Search for airline..."></input>
+			<input id="articleSearch" type="search" placeholder="Search for airline..."></input>
 			<span class="clear sml-button">Clear</span> 
       	  	
 			<h4>FILTER RESULTS: <span id="tags"></span>  </h4> 
     	</div> 
 		<!-- End Search and Tags -->
 
-		<p class="dim">Help other travelers: ping us if something is inaccurate <a href="https://twitter.com/minaal" class = "dim" target="_blank">on Twitter</a>.</p>
+		<p class="dim">Economy class info where applicable. Help other travelers: ping us if something is inaccurate on <i class="fa fa-twitter" aria-hidden="true"></i>
+ <a href="https://twitter.com/minaal" class = "dim" target="_blank">Twitter</a>.</p>
 
 		<div id="articleTable"></div>
 
@@ -90,7 +111,7 @@
 			<thead>
 				<tr>
 				<!-- <th class="fancy">&#8470;</th> -->
-				<th class="airline">Airline</th>
+				<th class="airline"><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;Airline</th>
 				<!-- <th class="personalitem">Personal Item</th>
 				<th class="personalsize">Personal Size</th> 
 				<th class="carryonbags"># of Bags</th>-->
@@ -99,9 +120,11 @@
 				<th class="linear">Linear</th>
 				<th class="weightkg">Weight (kg)</th>
 				<th class="weightlb">Weight (lb)</th>
-				<th class="date">Last Updated</th></tr>
+				<th class="date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Updated</th>
+			</tr>
 			</thead>
 		  {{#rows}}
+		  	<tbody>
 		  		<tr class="{{rowNumber}}"> 
 				<!-- <td class="light-type">{{rowNumber}}</td> -->
 				<td class="airline"><a href="{{url}}" target="_blank">{{airline}}</a></td>
@@ -113,7 +136,9 @@
 				<td class="linear">{{linear}}</td>							
 				<td class="weightkg">{{weightkg}}</td>
 				<td class="weightlb">{{weightlb}}</td>
-				<td class="date">{{date}}</td></tr>
+				<td class="date">{{date}}</td>
+				</tr>
+			</tbody>
 		  {{/rows}}
 	  </table>
 	</script>
