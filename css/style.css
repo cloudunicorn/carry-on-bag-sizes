@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
-body {font-family: Montserrat; font-size: 13px; padding: 10px 0px 40px 0px; color: #333;}
+body {font-family: Montserrat; font-size: 13px; padding: 10px 0px 40px 0px; color: #333;background-color:#F0EFED;}
 
 h1 {font-size: 48px; margin-bottom: 20px;}
 h2 {font-size: 40px; margin-bottom: 18px;}
 h3 {font-size: 30px; margin-bottom:14px; color:#333;}
 .highlighted {color: #169bbf; opacity: 1; transition: opacity .25s ease-in-out;}
-.highlighted:hover {opacity: 0.5;}
+.highlighted:hover {}
 a {text-decoration: none; padding-bottom: 1px; border-bottom: 1px dotted #169bbf; color:#333;}
 a:hover {padding-bottom: 1px; border-bottom: 1px dotted #333;}
 p a {color: #169bbf;}
@@ -24,7 +24,7 @@ p.dim {font-size: 10px; text-transform: uppercase; }
 .dim {color: #acacac;}
 .fancy {font-family: baskerville, garamond, serif; font-weight: lighter; font-style: italic;}
 
-#wrapper {margin: 0px auto; max-width: 1200px; padding-top: 40px; }
+#wrapper {margin: 0px auto; max-width: 1200px; }
 
 ul.nav {list-style: none; margin: 0px; padding: 0px;}
 .hello {display: inline; font-size: 12px; text-transform: uppercase; padding-right: 4px;}
@@ -38,13 +38,13 @@ ul.nav li.lede {font-size:1.3em;}
 #tags {line-height: 25px;}
 
 table {border-spacing: 0px; }
-th {padding: 10px; color:#333;font-size:1.3em;text-transform:uppercase;}
+th {padding: 10px; color:#333;font-size:1.3em;text-transform:uppercase;background-color:#F0EFED;}
 td, text {padding: 5px 10px; font-size: 14px; font-weight: lighter; line-height: 18px;}
 td.airport a:visited {color: #777;}
 td.date {min-width: 119px;}
 td.linear{min-width:100px;}
 tr {text-align: left; vertical-align: top; padding: 4px 0px;}
-tr:nth-child(2n+2) {background: #eee;}
+tr:nth-child(2n+1) {background: #fff;}
 .tHeader {cursor: pointer;}
 .tHeader::after {content: " \2193 \2191 "; font-size: 10px; padding-left: 3px;}
 
@@ -90,23 +90,18 @@ input[type="text"]:focus {
 	
 .insta-embed{
     float: right;
-    width: 250px;
-    margin-top: -40px;
     margin-right: 15%;
-    margin-left: 40px;
 }
 
 #articleTable{
 	margin-top:16px;
 }
 
-.date{
-	opacity:.5;
-}
-
 @media (max-width: 760px) {
 	h1 {font-size:28px;}
 	h3 {font-size:18px;}
+	
+	.insta-embed img{display:none;}
 	
 	input{font-size:18px; line-height:22px;}
 	
