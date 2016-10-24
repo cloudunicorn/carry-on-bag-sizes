@@ -21,7 +21,10 @@ function initiateTableFilter(data, filterDiv, tableDiv) {
 function searchTable(data, searchTerm, tableDiv) {
   var filteredList = []
   data.forEach(function(object) {
-    var stringObject = JSON.stringify(object).toLowerCase()
+    // Original strategy: Match against the whole object, stringified, for filtering
+    // var stringObject = JSON.stringify(object).toLowerCase()
+    // New strategy: Match against the airline name and sizes
+    var stringObject = object.airline.toLowerCase() + " " + object.sizeinches.toLowerCase() + " " + object.sizecm.toLowerCase()
     if (stringObject.match(searchTerm)) filteredList.push(object)
   })
   if (filteredList.length === 0) {
