@@ -14,7 +14,7 @@ function initiateTableFilter(data, filterDiv, tableDiv) {
   })
   $(filterDiv).keyup(function(e) {
     var text = $(e.target).val()
-    searchTable(data, text, tableDiv)
+    searchTable(data, text.toLowerCase(), tableDiv)
   })
 }
 
