@@ -24,7 +24,7 @@ p.dim {font-size: 10px; text-transform: uppercase; }
 .dim {color: #acacac;}
 .fancy {font-family: baskerville, garamond, serif; font-weight: lighter; font-style: italic;}
 
-#wrapper {margin: 0px auto; max-width: 1200px; }
+#wrapper {margin: 0px auto; max-width: 1200px; padding: 0 20px;}
 
 ul.nav {list-style: none; margin: 0px; padding: 0px;}
 .hello {display: inline; font-size: 12px; text-transform: uppercase; padding-right: 4px;}
@@ -82,7 +82,20 @@ input[type="text"]:focus {
 }
 
 
-.sml-button {border-radius: 1px; cursor: pointer; margin-left: 4px; padding: 4px 6px; background-color: #169bbf; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #fff; font-family: Montserrat;}
+.sml-button {
+	border-radius: 1px; 
+	cursor: pointer; 
+	margin-left: 4px; 
+	padding: 4px 6px; 
+	background-color: #169bbf; 
+	font-size: 11px; 
+	text-transform: uppercase; 
+	letter-spacing: .1em; 
+	text-align: center; 
+	color: #fff; 
+	font-family: Montserrat, sans-serif;
+	word-break: keep-all;
+}
 .sml-button:hover {background: #eee;}
 .button-pressed {background: #0CCC96;}
 
@@ -105,12 +118,12 @@ input[type="text"]:focus {
 	
 	input{font-size:18px; line-height:22px;}
 	
-	/* Force table to not be like tables anymore 
+	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; 
 	}
 	
-	/* Hide table headers (but not display: none;, for accessibility) 
+	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr { 
 		position: absolute;
 		top: -9999px;
@@ -120,7 +133,7 @@ input[type="text"]:focus {
 	tr { border: 1px solid #ccc; }
 	
 	td { 
-		/* Behave  like a "row" 
+		/* Behave  like a "row" */
 		border: none;
 		border-bottom: 1px solid #eee; 
 		position: relative;
@@ -128,9 +141,9 @@ input[type="text"]:focus {
 	}
 	
 	td:before { 
-		/* Now like a table header 
+		/* Now like a table header */
 		position: absolute;
-		/* Top/left values mimic padding 
+		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
 		width: 45%; 
@@ -141,17 +154,17 @@ input[type="text"]:focus {
 	.insta-embed{display:none;}
 	
 	/*
-	Label the data
+	Label the data */
 	
 	td:nth-of-type(1):before { content: "Airline"; }
 	/* td:nth-of-type(3):before { content: "Personal Items"; }
 	td:nth-of-type(4):before { content: "Personal Size"; } */
-	/* td:nth-of-type(3):before { content: "Carry-on Bags"; } 
+	td:nth-of-type(3):before { content: "Carry-on Bags"; } 
 	td:nth-of-type(2):before { content: "Size (cm)"; }
 	td:nth-of-type(3):before { content: "Size (in)"; }
 	td:nth-of-type(4):before { content: "Linear"; }
 	td:nth-of-type(5):before { content: "Weight (kg)"; }
 	td:nth-of-type(6):before { content: "Weight (lb)"; }
-	td:nth-of-type(7):before { content: "Updated"; } */
+	td:nth-of-type(7):before { content: "Updated"; } 
 }
 }
