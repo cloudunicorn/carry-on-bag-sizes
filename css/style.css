@@ -41,8 +41,9 @@ table {border-spacing: 0px; }
 th {padding: 10px; color:#333;font-size:1.3em;text-transform:uppercase;background-color:#F0EFED;}
 td, text {padding: 5px 10px; font-size: 14px; font-weight: lighter; line-height: 18px;}
 td.airport a:visited {color: #777;}
-td.date {min-width: 119px;}
-td.linear{min-width:100px;}
+td.date {min-width: 119px;color:#9c9c9c;}
+td.weightlb{min-width:50px;}
+td.weightkg{min-width:50px;}
 tr {text-align: left; vertical-align: top; padding: 4px 0px;}
 tr:nth-child(2n+1) {background: #fff;}
 .tHeader {cursor: pointer;}
