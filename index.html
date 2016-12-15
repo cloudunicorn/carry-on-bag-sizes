@@ -110,7 +110,8 @@
   </script>
 
 	<script id="articleTable" type="text/html">
-		<table itemscope itemtype="http://schema.org/ItemList">
+		<div itemscope itemtype="http://schema.org/ItemList">
+			<table>
 			<thead>
 				<tr>
 				<th class="airline"><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;</th>
@@ -122,9 +123,11 @@
 				<th class="date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Updated</th>
 			</tr>
 			</thead>
-		  {{#rows}}
-		  		<tr class="{{rowNumber}}">
-				<td class="airline"><a href="{{url}}" target="_blank">{{airline}}</a></td>
+		  	{{#rows}}
+				<span itemprop="itemListElement" itemscope
+				      itemtype="http://schema.org/ListItem"</span>
+				<tr class="{{rowNumber}}">
+				<td class="airline"><a itemprop="item" href="{{url}}" target="_blank"><span itemprop="name">{{airline}}</span></a></td>
 				<td class="size-cm">{{sizecm}}</td>	
 				<td class="size-in">{{sizeinches}}</td>
 				<td class="linear">{{linear}}</td>							
@@ -132,8 +135,9 @@
 				<td class="weightlb">{{weightlb}}</td>
 				<td class="date">{{date}}</td>
 				</tr>
-		  {{/rows}}
-	  </table>
+		  	{{/rows}}
+	  		</table>
+		</div>
 	</script>
 
   <script>
