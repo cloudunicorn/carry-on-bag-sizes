@@ -5,7 +5,9 @@ body {font-family: Montserrat; font-size: 13px; padding: 10px 0px 40px 0px; colo
 
 h1 {font-size: 48px; margin-bottom: 20px;}
 h2 {font-size: 40px; margin-bottom: 18px;}
-h3 {font-size: 30px; margin-bottom:14px; color:#333;}
+h3 {font-size: 30px; margin:8px 0px; color:#333;}
+h4 {font-size: 22px; margin:8px 0px 14px 0px;}
+
 .highlighted {color: #169bbf; opacity: 1; transition: opacity .25s ease-in-out;}
 .highlighted:hover {}
 a {text-decoration: none; padding-bottom: 1px; border-bottom: 1px dotted #169bbf; color:#333;}
@@ -167,6 +169,6 @@ input[type="text"]:focus {
 	td:nth-of-type(5):before { content: "Weight (kg)"; }
 	td:nth-of-type(6):before { content: "Weight (lb)"; }
   td:nth-of-type(7):before { content: "Updated"; }
-  td:nth-of-type(8):before { content: "Minaal 2.0"; } 
+  td:nth-of-type(8):before { content: "Minaal 2.0"; }
 }
 }
